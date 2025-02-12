@@ -1,9 +1,13 @@
 import { useState } from "react";
+//components
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <Header></Header>
+      <Main></Main>
     </>
   );
 }
