@@ -40,6 +40,10 @@ ul {
 .film-vote {
   color: #f0ad4e;
 }
+.language {
+  display: flex;
+  align-items: center;
+}
 
 .film-language {
   width: 24px;
