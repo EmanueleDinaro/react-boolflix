@@ -1,12 +1,15 @@
+import { useFilmDataContext } from "../context/AppDataContext";
+
 export default function Main() {
+  const { films, setFilms } = useFilmDataContext();
+
   return (
     <main>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
-        doloribus. Quasi soluta id laborum voluptas dignissimos quam, vero
-        iusto. Possimus at iusto itaque porro earum obcaecati quibusdam commodi
-        ea. Voluptates.
-      </p>
+      <ul>
+        {films.map((film) => (
+          <li key={film.id}>{film.title}</li>
+        ))}
+      </ul>
     </main>
   );
 }

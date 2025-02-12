@@ -1,8 +1,11 @@
 import { useState } from "react";
+import axios from "axios";
+//context
+import { useFilmDataContext } from "../context/AppDataContext";
 
 export default function SearchBar() {
   const [search, setSearch] = useState("");
-  const [films, setFilms] = useState([]);
+  const { films, setFilms } = useFilmDataContext();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,12 +29,8 @@ export default function SearchBar() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
+
       <button type="submit">Invio</button>
-      <ul>
-        {films.map((film) => {
-          <li key={film.id}>{film.title}</li>;
-        })}
-      </ul>
     </form>
   );
 }
