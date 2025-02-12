@@ -1,0 +1,48 @@
+/*--------------
+    RESET
+--------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------
+      CARDS
+  --------------*/
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.film-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  margin: 12px;
+  width: 250px;
+}
+
+.film-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.film-title {
+  font-weight: bold;
+}
+
+.film-vote {
+  color: #f0ad4e;
+}
+
+.film-language {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
