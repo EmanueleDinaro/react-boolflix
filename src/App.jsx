@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FilmDataProvider } from "./context/AppDataContext";
+import { DataProvider } from "./context/AppDataContext";
 
 //components
 import Header from "./components/Header";
@@ -7,10 +7,10 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <FilmDataProvider>
+    <DataProvider>
       <Header></Header>
       <Main></Main>
-    </FilmDataProvider>
+    </DataProvider>
   );
 }
 
