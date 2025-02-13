@@ -30,6 +30,7 @@ header {
   color: white;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  position: sticky;
 }
 
 .nav-bar {
@@ -70,4 +71,14 @@ header {
   font-size: 20px;
   margin-left: 5px;
   cursor: pointer;
+}
+
+/*--------------
+    MAIN
+--------------*/
+
+main {
+  background-color: #333;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

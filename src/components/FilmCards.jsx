@@ -7,7 +7,6 @@ export default function FilmCard() {
 
   return (
     <>
-      <h2>Film</h2>
       <ul>
         {films.map((film) => (
           <li key={film.id} className="show-card">

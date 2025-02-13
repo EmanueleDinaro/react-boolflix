@@ -7,7 +7,6 @@ export default function SeriesCard() {
 
   return (
     <>
-      <h2>Serie TV</h2>
       <ul>
         {series.map((series) => (
           <li key={series.id} className="show-card">
