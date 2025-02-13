@@ -1,4 +1,6 @@
 import { useDataContext } from "../context/AppDataContext";
+import StarsVote from "./VoteStars";
+import "./cards.css";
 
 export default function SeriesCard() {
   const { series, setSeries } = useDataContext();
@@ -8,21 +10,21 @@ export default function SeriesCard() {
       <h2>Serie TV</h2>
       <ul>
         {series.map((series) => (
-          <li key={series.id} className="film-card">
+          <li key={series.id} className="show-card">
             <img
-              className="film-image"
+              className="show-image"
               src={`https://image.tmdb.org/t/p/w342/${series.poster_path}`}
               alt={series.name}
             />
-            <h3 className="film-title">{series.name}</h3>
-            <h4 className="film-original-title">
+            <h3 className="show-title">{series.name}</h3>
+            <h4 className="show-original-title">
               Titolo originale: {series.original_name}
             </h4>
             <div className="language">
               <h4>Lingua: </h4>
 
               <img
-                className="film-language"
+                className="show-language"
                 src={`https://purecatamphetamine.github.io/country-flag-icons/3x2/${
                   series.original_language === "en"
                     ? "GB"
@@ -37,7 +39,11 @@ export default function SeriesCard() {
                 alt={series.original_language}
               />
             </div>
-            <h4 className="film-vote">Voto: {series.vote_average}</h4>
+            <div className="show-vote">
+              <h4 id="number-vote">Voto TMDB: {series.vote_average}</h4>
+              <span>|</span>
+              <StarsVote vote={series.vote_average} />
+            </div>
           </li>
         ))}
       </ul>

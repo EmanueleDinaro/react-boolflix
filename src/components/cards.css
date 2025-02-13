@@ -1,0 +1,62 @@
+/*--------------
+    RESET
+--------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------
+      CARDS
+  --------------*/
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  margin: 12px;
+  width: 250px;
+  position: relative;
+}
+
+.show-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.show-title {
+  font-weight: bold;
+}
+
+.show-vote {
+  display: flex;
+  color: #f0ad4e;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#number-vote {
+  font-size: 18px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.show-language {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
