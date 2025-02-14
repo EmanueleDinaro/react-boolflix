@@ -5,7 +5,7 @@ const FilmCardBack = ({ film }) => {
     <div className="card-back">
       <img
         className="show-image"
-        src={`https://image.tmdb.org/t/p/w342/${film.backdrop_path}`}
+        src={`https://image.tmdb.org/t/p/w342/${film.poster_path}`}
         alt={film.title}
       />
       <h3 className="show-title">{film.title}</h3>
