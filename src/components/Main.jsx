@@ -5,7 +5,6 @@ export default function Main() {
   return (
     <main>
       <FilmCard></FilmCard>
-      <hr />
       <SeriesCard></SeriesCard>
     </main>
   );
