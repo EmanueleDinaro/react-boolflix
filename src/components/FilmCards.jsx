@@ -6,7 +6,8 @@ export default function FilmCard() {
   const { films, setFilms } = useDataContext();
 
   return (
-    <>
+    <div className="card-container">
+      {films.length > 0 ? <h2 className="category">Movies</h2> : null}
       <ul>
         {films.map((film) => (
           <li key={film.id} className="show-card">
@@ -46,6 +47,6 @@ export default function FilmCard() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }

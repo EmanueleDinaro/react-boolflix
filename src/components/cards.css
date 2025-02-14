@@ -12,6 +12,10 @@
       CARDS
   --------------*/
 
+.category {
+  color: #fff;
+}
+
 ul {
   list-style: none;
   display: flex;
